@@ -1,7 +1,8 @@
-package app.ferdyhaspin.moviecatalogue
+package app.ferdyhaspin.moviecatalogue.ui.main
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import app.ferdyhaspin.moviecatalogue.R
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
