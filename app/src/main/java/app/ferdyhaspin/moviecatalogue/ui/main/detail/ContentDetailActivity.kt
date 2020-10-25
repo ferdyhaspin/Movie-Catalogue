@@ -1,4 +1,4 @@
-package app.ferdyhaspin.moviecatalogue.ui.main.content.detail
+package app.ferdyhaspin.moviecatalogue.ui.main.detail
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity

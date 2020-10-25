@@ -4,7 +4,7 @@
     package="app.ferdyhaspin.moviecatalogue">
 
     <application
-        android:name=".App"
+        android:name=".MovieApp"
         android:allowBackup="false"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -14,14 +14,15 @@
         android:usesCleartextTraffic="true"
         tools:targetApi="m">
 
-        <activity android:name=".ui.main.content.detail.ContentDetailActivity" />
+        <activity android:name="app.ferdyhaspin.moviecatalogue.ui.main.detail.ContentDetailActivity" />
 
         <activity android:name=".ui.main.MainActivity" />
 
-        <activity android:name=".ui.splash.SplashActivity">
+        <activity
+            android:name=".ui.splash.SplashActivity"
+            android:theme="@style/SplashScreenTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
 

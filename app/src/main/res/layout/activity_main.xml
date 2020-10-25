@@ -6,13 +6,34 @@
     android:layout_height="match_parent"
     tools:context=".ui.main.MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/bottomBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <me.ibrahimsn.lib.SmoothBottomBar
+        android:id="@+id/bottomBar"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        app:activeItem="0"
+        app:backgroundColor="@android:color/white"
+        app:cornerRadius="@dimen/spacing_xlarge"
+        app:iconMargin="@dimen/spacing_middle"
+        app:iconSize="23dp"
+        app:iconTint="@color/colorSilver"
+        app:iconTintActive="@color/colorPrimaryDark"
+        app:indicatorColor="#4FC8C9CA"
+        app:itemFontFamily="@font/google_sans_light"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/bottom_menu"
+        app:textColor="@color/colorPrimaryDark"
+        app:textSize="@dimen/font_medium_small" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
